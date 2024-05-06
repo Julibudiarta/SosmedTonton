@@ -1,0 +1,57 @@
+ /* Custom styles for the sidebar */
+ .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  /* Give some space for content */
+  .content {
+    padding: 20px;
+  }
+
+  /* Media query for responsive layout */
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none; /* Hide sidebar */
+    }
+
+  }
+  @media (min-width: 768px) {
+      #home{
+          display:none;
+      }
+      .content{
+          position: fixed;
+          margin-left: 33%;
+          margin-right: 20%;
+      }
+      .card{
+          width: 100vh;
+      }
+      .pad{
+         padding-left: 30%;
+      }
+
+
+      .comment{
+        /* position:absolute; */
+        top:0;
+        width:80vh;
+        max-width: auto;
+        min-height: 400px;
+        max-height: 400px;
+        overflow-y: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .comment::-webkit-scrollbar{
+        display: none;
+  
+    }
+  
+  }
+  
